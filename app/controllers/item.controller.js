@@ -11,6 +11,7 @@ exports.create = (req, res) => {
 
   // Create a Item
   const item = new Item({
+    category: req.body.category,
     name: req.body.name,
     notes: req.body.notes,
     published: req.body.published ? req.body.published : false
