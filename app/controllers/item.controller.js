@@ -12,7 +12,7 @@ exports.create = (req, res) => {
   // Create a Item
   const item = new Item({
     name: req.body.name,
-    description: req.body.description,
+    notes: req.body.notes,
     published: req.body.published ? req.body.published : false
   });
 

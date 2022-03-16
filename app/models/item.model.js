@@ -8,7 +8,7 @@ module.exports = mongoose => {
       confirmed: Boolean,
       published: Boolean,
       name: String,
-      description: String,
+      notes: String,
     },
     { timestamps: true }
   );
