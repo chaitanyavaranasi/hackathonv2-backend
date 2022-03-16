@@ -14,6 +14,8 @@ exports.create = (req, res) => {
     category: req.body.category,
     name: req.body.name,
     notes: req.body.notes,
+    longitude: req.body.longitude,
+    latitude: req.body.latitude,
     published: req.body.published ? req.body.published : false
   });
 

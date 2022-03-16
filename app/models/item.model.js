@@ -7,12 +7,12 @@ module.exports = mongoose => {
       claimed: Boolean,
       confirmed: Boolean,
       published: Boolean,
-      name: String,
-      notes: String,
-    },
+      longitute: Number,
+      latitude: Number,
+      },
     { timestamps: true }
   );
-
+  
   schema.method("toJSON", function() {
     const { __v, _id, ...object } = this.toObject();
     object.id = _id;
